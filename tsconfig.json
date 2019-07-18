@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
         "outDir": "./dist/",
+        "declarationDir": "./dist/typings/",
         "noImplicitAny": true,
-        "module": "amd",
+        "module": "commonjs",
         "target": "es6",
         "declaration": true,
         "jsx": "react",
@@ -16,5 +17,9 @@
     "exclude": [
         "node_modules",
         "dist"
-    ]
+    ],
+    "typedocOptions": {
+        "mode": "modules",
+        "out": "docs"
+    }
 }

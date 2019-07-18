@@ -1,15 +1,30 @@
 {
-    "name": "raffa-p5-wrapper",
+    "name": "p5-display",
     "license": "MIT",
-    "description": "React Wrapper for p5.js",
+    "description": "A library of controllable React components for p5.js sketches.",
     "authors": "Raffa Levy",
-    "version": "1.0.0",
-    "scripts": {
-        "build": "babel src -d dist --extensions \".ts\" --extensions \".tsx\" && tsc",
-        "watch": "babel src -d dist --extensions \".ts\" --extensions \".tsx\" --watch > /dev/null | tsc --watch"
+    "keywords": [
+        "react",
+        "react.js",
+        "p5",
+        "p5.js",
+        "frontend",
+        "generative art",
+        "processing",
+        "components",
+        "p5js"
+    ],
+    "version": "0.1.0",
+    "repository": {
+        "url": "https://github.com/raffalevy/p5-display"
     },
-    "main": "./dist/main.js",
-    "typings": "./dist/main.d.ts",
+    "scripts": {
+        "build": "npx webpack",
+        "watch": "npx webpack --watch",
+        "docs": "npx typedoc"
+    },
+    "main": "./dist/p5-display.js",
+    "typings": "./dist/typings/p5-display.d.ts",
     "dependencies": {
         "@types/p5": "^0.7.3",
         "@types/react": "^16.8.23",
@@ -18,11 +33,20 @@
         "p5": "^0.9.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
-        "styled-components": "^4.3.2",
         "typescript": "^3.5.3"
     },
     "files": [
-        "dist/"
+        "dist/typings/"
     ],
-    "devDependencies": {}
+    "devDependencies": {
+        "source-map-loader": "^0.2.4",
+        "styled-components": "^4.3.2",
+        "typedoc": "^0.14.2",
+        "webpack": "^4.36.1",
+        "webpack-cli": "^3.3.6",
+        "webpack-node-externals": "^1.7.2"
+    },
+    "peerDependencies": {
+        "styled-components": "^4.3.2"
+    }
 }
