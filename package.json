@@ -39,11 +39,11 @@
         "dist/typings/"
     ],
     "devDependencies": {
-        "source-map-loader": "^0.2.4",
+        "source-map-loader": "^4.0.1",
         "styled-components": "^4.3.2",
         "typedoc": "^0.14.2",
-        "webpack": "^4.36.1",
-        "webpack-cli": "^3.3.6",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.1",
         "webpack-node-externals": "^1.7.2"
     },
     "peerDependencies": {
